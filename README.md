@@ -23,7 +23,7 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento local.
 
 Clone o Repositório
 
-git clone https://github.com/matheuscardosolazzarini/cliente-app-angular.git
+git clone <URL_DO_SEU_REPOSITORIO_FRONTEND>
 cd cliente-app
 
 Instale as Dependências
@@ -72,12 +72,10 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento local.
 
 Clone o Repositório
 
-Substitua <URL_DO_SEU_REPOSITORIO_FRONTEND> pela URL real do seu repositório Git.
-
-Bash
-
 git clone <URL_DO_SEU_REPOSITORIO_FRONTEND>
 cd cliente-app
+
+
 Instale as Dependências
 
 Este comando irá baixar todas as bibliotecas necessárias para o projeto (Angular, Angular Material, ngx-mask, etc.) que estão listadas no arquivo package.json.
