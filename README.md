@@ -23,7 +23,7 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento local.
 
 Clone o Repositório
 
-git clone <URL_DO_SEU_REPOSITORIO_FRONTEND>
+git clone https://github.com/matheuscardosolazzarini/cliente-app-angular.git
 cd cliente-app
 
 Instale as Dependências
