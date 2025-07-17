@@ -23,6 +23,9 @@ Antes de começar, você precisará ter o seguinte software instalado em sua má
   ```bash
   npm install -g @angular/cli
 ⚙️ Configuração do Projeto
+
+Clone o Repositório
+
 Siga os passos abaixo para configurar o ambiente de desenvolvimento local.
 
 ```
@@ -37,7 +40,8 @@ Este comando irá baixar todas as bibliotecas necessárias para o projeto (Angul
 
 Bash
 
-npm install
+```npm install```
+
 
 Configure a URL da API
 
@@ -47,7 +51,7 @@ Verifique se a propriedade apiUrl corresponde à URL da sua API C# em execução
 
 TypeScript
 
-// src/app/services/cliente.service.ts
+```// src/app/services/cliente.service.ts
 
 export class ClienteService {
   // Verifique se esta URL está correta
@@ -55,6 +59,9 @@ export class ClienteService {
 
   // ... resto do serviço
 }
+```
+
+
 ▶️ Executando a Aplicação
 Para executar a aplicação, o back-end e o front-end precisam estar rodando simultaneamente.
 
