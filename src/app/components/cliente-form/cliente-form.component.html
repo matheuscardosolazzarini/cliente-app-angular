@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-title>{{ isEditMode ? 'Editar Cliente' : 'Novo Cliente' }}</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="clienteForm" (ngSubmit)="onSubmit()">
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="nome" placeholder="Nome completo">
+        <mat-error *ngIf="clienteForm.get('nome')?.invalid">Nome é obrigatório (mínimo 3 caracteres).</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="exemplo@email.com">
+        <mat-error *ngIf="clienteForm.get('email')?.invalid">Email é obrigatório e precisa ser válido.</mat-error>
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label>CPF</mat-label>
+         <input matInput formControlName="cpf" placeholder="000.000.000-00" mask="000.000.000-00">
+         <mat-error *ngIf="clienteForm.get('cpf')?.invalid">CPF é obrigatório (mínimo 11 caracteres).</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Telefone</mat-label>
+        <input matInput formControlName="telefone" placeholder="(00) 00000-0000" mask="(00) 00000-0000">
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Data de Nascimento</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dataNascimento" placeholder="DD/MM/AAAA">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <div class="actions">
+        <button mat-raised-button color="primary" type="submit" [disabled]="clienteForm.invalid">Salvar</button>
+        <button mat-stroked-button type="button" routerLink="/clientes">Cancelar</button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>
