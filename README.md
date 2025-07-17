@@ -22,6 +22,8 @@ Antes de começar, você precisará ter o seguinte software instalado em sua má
 * [Angular CLI](https://angular.io/cli) (instalado globalmente)
   ```bash
   npm install -g @angular/cli
+
+  
 ⚙️ Configuração do Projeto
 
 Clone o Repositório
@@ -68,6 +70,8 @@ Para executar a aplicação, o back-end e o front-end precisam estar rodando sim
 Inicie o Back-end: Execute a API C# .NET a partir do Visual Studio ou via linha de comando.
 
 Inicie o Front-end: No terminal, dentro da pasta cliente-app, execute o seguinte comando:
+
+
 
 ```ng serve --open```
 Isso irá compilar a aplicação e abri-la automaticamente no seu navegador, geralmente no endereço http://localhost:4200.
