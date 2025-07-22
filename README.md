@@ -7,13 +7,6 @@ Este é o projeto front-end desenvolvido em Angular para consumir a **API de Cli
 
 Esta aplicação front-end **não funciona sozinha**. Ela foi projetada para consumir os dados da API em C# .NET. Certifique-se de que o projeto back-end esteja configurado e em execução para que o front-end possa buscar e enviar dados.
 
-## Índice
-
-- [Pré-requisitos](#pré-requisitos)
-- [Configuração do Projeto](#️-configuração-do-projeto)
-- [Executando a Aplicação](#️-executando-a-aplicação)
-- [Funcionalidades Implementadas](#-funcionalidades-implementadas)
-
 ## Pré-requisitos
 
 Antes de começar, você precisará ter o seguinte software instalado em sua máquina:
